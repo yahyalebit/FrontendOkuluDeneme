@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Öğrenci Profili</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+        .header {
+            background: #333;
+            color: #fff;
+            padding: 1rem 0;
+            text-align: center;
+        }
+        .header h1 {
+            margin: 0;
+        }
+        .profile-picture {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            margin: 20px auto;
+            display: block;
+        }
+        .content {
+            padding: 20px;
+            background: #fff;
+            margin: 20px 0;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .content h2 {
+            text-align: center;
+        }
+        .hobbies {
+            list-style-type: square;
+            padding-left: 20px;
+        }
+        .contact-info, .contact-form {
+            margin: 20px 0;
+        }
+        .contact-form label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        .contact-form input, .contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+        .contact-form button {
+            background-color: #333;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            border-radius: 4px;
+        }
+        .contact-form button:hover {
+            background-color: #069406;
+        }
+        .content-media img {
+            width: 30px;
+            height: 30px;
+            border-radius: 20%
+        }
+        .content-media {
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }   
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Yahya Lebit - Öğrenci</h1>
+    </div>
+    
+    <div class="container">
+        <img src="asdd.jpg" alt="Profil Resmi" class="profile-picture">
+        
+        <div class="content">
+            <h2>Hakkımda</h2>
+            <p>Haliç Üniversitesi bilgisayar programcılığı 2. sınıf öğrencisiyim. İstabul Fatih'de doğdum 23 yaşındayım. Programlama ve yazılıma 2 yıl önce C diliyle giriş yaptım. Aktif olarak Frontend eğitimi alıyorum.   </p>
+            
+            <h2>İlgi Alanları</h2>
+            <ul class="hobbies">
+                <li>Voleybol(2 Altın, 1 Gümüş)</li>
+                <li>Futbol(1 Altın, 1 Gümüş)</li>
+                <li>Yüzme</li>
+                <li>Kamp</li>
+            </ul>
+            
+            <h2>İletişim Bilgileri</h2>
+            <div class="content-media">
+                <p>Email: <a href="mailto:yahyalebitt7@gmail.com">yahyalebitt7@gmail.com</a></p>
+                <a href="http://www.instagram.com/yahyalebitt" target="_blank"><img border="0" title="instagram" src="instagram.jpeg"></a>
+                <a href="https://www.github.com/yahyalebit" target="_blank"><img border="0" title="github" src="github.jpeg"></a>
+            </div>
+            <h2>İletişim Formu</h2>
+            <form class="contact-form">
+                <label for="name">Ad Soyad:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="message">Mesajınız:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+                
+                <button type="submit">Gönder</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

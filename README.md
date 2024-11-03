@@ -1,2 +1,2 @@
-# FrontendOkuluDeneme
-CoderSpace Fronend Okulu Test Reposu
+# FrontendOkulu
+CoderSpace Frontend Okulu
